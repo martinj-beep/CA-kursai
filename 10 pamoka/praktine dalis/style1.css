@@ -1,0 +1,43 @@
+form {
+    color: white;
+    background-color: #2f4f4f;
+    text-align: center;
+}
+
+input:read-only {
+    background-color: grey;
+    border-color: black rgb(173, 170, 170) rgb(173, 170, 170) black;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+input, textarea {
+    margin-bottom: 12px;
+    border: 2px solid red;
+    border-left-color: pink;
+}
+
+input:in-range {
+    border: 2px solid green;
+}
+
+input:out-of-range {
+    border: 2px solid red;
+}
+
+button {
+    color: white;
+    background-color: green;
+    padding: 3px 6px;
+    border-radius: 0;
+}
+
+button:hover {
+    background-color: rgb(4, 66, 4);
+}
+
+#agree:checked ~ #myAgree {
+    color: purple;
+}

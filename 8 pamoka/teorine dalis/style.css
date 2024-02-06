@@ -1,0 +1,58 @@
+p:first-child {
+    color: red;
+}
+
+p:last-child {
+    color: blue;
+}
+
+p:nth-child(2) {
+    color: green;
+}
+
+div:nth-child(3) p:nth-last-child(2) {
+    background-color: yellow;
+}
+
+p:only-child {
+    color: tomato;
+}
+
+p:first-of-type {
+    font-size: 30px;
+}
+
+
+p::first-line {
+    line-height: 2;
+}
+
+h3::before, h3::after, h5::before, h5::after {
+    content: "XXX";
+    color: red;
+}
+
+nav a:not(:first-child)::before {
+    content: "//";
+}
+
+p::selection {
+    background-color: red;
+    font-size: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: aqua;
+}

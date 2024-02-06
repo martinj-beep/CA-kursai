@@ -1,0 +1,103 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.block {
+    display: block;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+.alignRight {
+    text-align: left;
+    margin-left: 220px;
+}
+
+.alignLeft {
+    text-align: left;
+}
+
+.colorGrey {
+    color: grey;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+    margin-left: 10px;
+}
+
+.colorBlue {
+    color: rgb(12, 142, 171);
+}
+
+.spaceBetween {
+    margin-left: 10px;
+}
+
+section {
+    text-align: left;
+    padding: 30px;
+    width: 80%;
+}
+
+body > div {
+    display: inline-block;
+    white-space: nowrap;
+    border-bottom: 2px solid grey;
+}
+
+ul {
+    padding: 0;
+}
+
+aside {
+    color: white;
+    background-color: rgb(53, 50, 50);
+    float: left;
+    height: 200vh;
+    padding: 10px;
+    text-align: left;
+    position: static;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+aside div {
+border-bottom: 1px solid black;
+}
+
+.textSize {
+    font-size: 28px;
+}
+
+body {
+    padding-top:15px;
+}
+
+.container {
+    position: relative;
+}
+
+aside {
+    width: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+section {
+    float: left;
+    margin-left: 230px;
+}
+
+.paskutinis {
+    float: right;
+    margin-right: 15px;
+}

@@ -1,0 +1,47 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("https://miro.medium.com/v2/resize:fit:2916/1*4SnVC3J3uQXXfttNu0nd6w.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: red;
+}
+
+h1 {
+font-size: 56px;
+text-decoration: underline;
+}
+
+header {
+    text-align: center;
+}
+
+header nav a {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: rgb(223, 19, 70);
+}
+
+main h2 {
+    text-align: center;
+}
+
+.leftArticle {
+    display: inline-block;
+    width: 25%;
+    background-color: blue;
+    margin: 5px;
+    color: white;
+    text-shadow: 5px 6px rgb(223, 19, 70);
+}
+
+
+
+/* Galimas, bet neprivalomas turinys: vardas, pavardė, išsilavinimas, įdomi istorija, hobiai ar pan.
+Rašykite HTML semantiškai, naudokite  – <header>, <main>, <article> ir kitus semantinius elementus
+Pritaikykite pamokoje išmoktas CSS savybes (šešėlius, background, ir t.t)
+Panaudokite pasirinktą šriftą iš  https://fonts.google.com/
+Visą stilių sudėkite į style.css ir susiekite su HTML
+Pasidalinkite rezultatu su visais per Teams */

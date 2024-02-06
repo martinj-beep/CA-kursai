@@ -1,0 +1,31 @@
+body {
+    background-image: url(https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg);
+}
+
+form {
+    background-color: white;
+    margin: 20px 30px;
+    padding: 25px 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input, textarea {
+    border: 0px;
+    border-bottom: solid 2px black;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+button {
+    color: white;
+   background-color: rgb(61, 57, 57); 
+   border: 0;
+   padding: 3px 50px;
+}

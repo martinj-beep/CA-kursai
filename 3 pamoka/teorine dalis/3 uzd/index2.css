@@ -1,0 +1,16 @@
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(67deg, blue, purple
+    );
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("https://images.nationalgeographic.org/image/upload/v1638882947/EducationHub/photos/tourists-at-victoria-falls.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+img {
+    width: 45%;
+box-shadow: 10px 10px 8px lightblue, -5px -5px 8px lightblue;
+}

@@ -1,0 +1,25 @@
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 5px;
+}
+
+.colorOr {
+    background-color: orange;
+}
+
+.colorBl {
+    background-color: blue;
+}
+
+.colorGr {
+    background-color: green;
+}
+
+.whiteText {
+    color: white;
+}

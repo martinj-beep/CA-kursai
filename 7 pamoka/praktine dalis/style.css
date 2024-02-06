@@ -1,0 +1,94 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 15px;
+}
+
+header {
+    background-color: rgb(9, 9, 43);
+}
+
+img {
+    display: block;
+    margin: 20px auto 50px auto;
+    width: 40%;
+    padding-top: 30px;
+}
+
+.white {
+    color: white;
+}
+
+nav {
+    display: block;
+    text-align: right;
+    background-color: rgb(210, 188, 20);
+    padding: 10px 15px 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+
+.up {
+    text-align: center;
+    display: block;
+    background-color: red;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    margin: 0 30%;
+}
+
+/* PASIKLAUST KAIP PADARYT MYGTUKO KRASTUS FIKSUOTO DYDZIO */
+
+.sectionTable {
+    background-color: rgb(92, 57, 127);
+    margin: 0;
+    padding: 20px 15%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid red;
+    color: white;
+}
+
+td {
+    padding: 5px 3px;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.down {
+    color: blue;
+    text-align: center;
+    display: block;
+}
+
+footer {
+    color: white;
+    background-color: rgb(210, 188, 20);
+    text-align: center;
+}
+
+footer p {
+    padding: 10px 0;
+}

@@ -1,0 +1,29 @@
+.inside {
+    box-sizing: border-box;
+    /* outline: 1px solid purple; */
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+.inside div {
+    box-sizing: border-box;
+    outline: 1px solid purple;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.smallBox {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    flex-wrap: wrap;
+}
+
+.bigBox {
+    box-sizing: border-box;
+    width: 100px;
+    height: 200px;
+}

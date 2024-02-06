@@ -1,0 +1,28 @@
+h3, p {
+    text-decoration: underline;
+}
+
+#heading {
+    color: aquamarine;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 2;
+    letter-spacing: 10px;
+    color: #aa59f157;
+}
+
+.large {
+    text-decoration: wavy;
+    color: rgba(100, 50, 99, 0.8);
+    font-size: 25px;
+}
+
+.text {
+    font-size: 50px;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
