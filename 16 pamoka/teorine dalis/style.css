@@ -1,0 +1,44 @@
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: rebeccapurple;
+    transition: background-color 2s, width 3s;
+    text-decoration: none;
+    transition-timing-function: linear;
+}
+
+.box:hover {
+    background-color: red;
+    width: 300px;
+    text-decoration: underline;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1.5);
+        background-color: blue;;
+    }
+    50% {
+        transform: scale(2);
+        background-color: green;
+    }
+    100% {
+        transform: scale(1);
+        background-color: red;
+    }
+}
+
+.animation {
+    height: 300px;
+    width: 200px;
+    background-color: lightcoral;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+}
+
+.animation:hover {
+    animation: pulse 3s infinite;
+}
