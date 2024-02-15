@@ -96,7 +96,6 @@ header > div {
 
 .blueTheme {
     color: #645cff;
-    /* font-weight: bold; */
 }
 
 header > div h1 {
@@ -118,9 +117,9 @@ header > div > div > i {
 }
 
 .caps {
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     line-height: 50px;
-    font-size: 40px;
+    font-size: 34px;
 }
 
 .explore button {
@@ -137,22 +136,98 @@ header > div > div > i {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
 }
 
 .about {
     text-align: center;
 }
 
-.about h2 {
-    font-weight: 500;
+.about h1 {
+    /* font-weight: bold; */
+    margin: 50px auto;
 }
 
 .about > div {
     text-align: justify;
-    margin: 30px 10%;
+    margin: 50px 10%;
 }
 
 .about > div a {
     text-decoration: none;
     color: blue;
+}
+
+.services {
+  background-color: #b4dff0;
+  text-align: center;
+  padding: 60px 30px 80px 30px;
+}
+
+.icons i {
+  background-color: #645cff;
+  padding: 12px;
+  font-size: 25px;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.icons > div {
+  width: 40%;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.icons > div > h2 {
+  text-align: center;
+  white-space: nowrap;
+  font-size: 22px;
+}
+
+#socks {
+  text-align: center;
+  white-space: wrap;
+}
+
+.tours img {
+  width: 100%;
+}
+
+.tours > div {
+  border: 1px solid black;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.tours {
+  text-align: center;
+}
+
+.tours > div > div {
+  text-align: left;
+  margin: 20px;
+}
+
+.tours > div > div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tours > div > div > div a {
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  /* text-align: center; */
+}
+
+.date {
+  position: absolute;
+  top: 8px
 }
