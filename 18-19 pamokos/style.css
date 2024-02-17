@@ -205,6 +205,7 @@ header > div > div > i {
 
 .tours {
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .tours > div > div {
@@ -224,10 +225,70 @@ header > div > div > i {
 
 .container {
   position: relative;
-  /* text-align: center; */
+  /* SUSITVARKYT IR PLOTI IR DATAS */
 }
 
 .date {
   position: absolute;
   top: 8px
+}
+
+.tours > a {
+  text-decoration: none;
+  color: #645cff;
+}
+
+.gallery {
+  text-align: center;
+  background-color: #b4dff0;
+  padding: 10px;
+}
+
+.photos {
+  background-color: #645cff;
+}
+
+.photos img {
+  width: 100%;
+}
+
+.updates {
+  background-color: #645cff;
+  color: white;
+  display: flex;
+  padding: 20px 10px 40px 10px;
+  align-items: center;
+}
+
+.updates h1 {
+  margin-top: 0;
+}
+
+.updatesLeft {
+  text-align: center;
+  padding-right: 10px;
+}
+
+.updatesLeft p {
+  text-align: left;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper input {
+  width: 220px;
+  height: 30px;
+}
+
+.wrapper > input::placeholder {
+  
+}
+
+.wrapper button {
+  position: absolute;
+  right: 0;
+  top: 2px
+  border: 0;
 }
