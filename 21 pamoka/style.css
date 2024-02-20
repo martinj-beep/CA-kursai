@@ -1,0 +1,33 @@
+@media screen and (max-width: 200px) {
+  body {
+    background-color: blue;
+  }
+}
+p {
+  color: blue;
+}
+
+header {
+  background-color: grey;
+}
+header nav {
+  background-color: blue;
+}
+
+.section, .section3 {
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.section2 {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.section3 {
+  text-align: center;
+}
+
+.section4 {
+  color: grey;
+}/*# sourceMappingURL=style.css.map */
