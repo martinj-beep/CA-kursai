@@ -151,3 +151,7 @@
 // }
 
 // console.log(grade);
+
+if ("0") {
+    alert( 'Hello' );
+  }
