@@ -132,29 +132,39 @@
 
 
 
-SUDETINGAS  Parašykite JavaScript ciklą, kuris atspausdina visus pirminius skaičius nuo 1 iki 20.
+// SUDETINGAS  Parašykite JavaScript ciklą, kuris atspausdina visus pirminius skaičius nuo 1 iki 20.
 
-Pirminis skaičius – bet kuris natūralusis skaičius, didesnis nei 1, kuris dalinasi tik iš savęs ir vieneto. 
+// Pirminis skaičius – bet kuris natūralusis skaičius, didesnis nei 1, kuris dalinasi tik iš savęs ir vieneto. 
 
-PASIBAIGT
+// PASIBAIGT
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 
 
-for (let index = 1; index < 21; index++) {
-    if (index % 1 == 0) {
-        if (condition) {
-            console.log(index);
-        }
-    }
+// for (let index = 1; index < 21; index++) {
+//     if (index % 1 == 0) {
+//         if (condition) {
+//             console.log(index);
+//         }
+//     }
+// }
+
+// Parašykite JavaScript programą, kuri naudojant for ciklą atspausdina pirmus dešimt Fibonačio sekos skaičius.
+
+// Here's the sequence breakdown:
+
+//     The first two numbers in the Fibonacci sequence are 0 and 1.
+//     Each subsequent number is the sum of the two preceding numbers.
+//     So, the third number is 0 + 1 = 1, the fourth number is 1 + 1 = 2, the fifth number is 1 + 2 = 3, and so on.
+
+// 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
+
+let n1 = 0;
+let n2 = 1;
+let nextTerm;
+for (let i = 1; i <= 10; i++) {
+    nextTerm = n1 + n2;
+    n1 = n2;
+    n2 = nextTerm;
+    console.log(nextTerm);
 }
-
-Parašykite JavaScript programą, kuri naudojant for ciklą atspausdina pirmus dešimt Fibonačio sekos skaičius.
-
-Here's the sequence breakdown:
-
-    The first two numbers in the Fibonacci sequence are 0 and 1.
-    Each subsequent number is the sum of the two preceding numbers.
-    So, the third number is 0 + 1 = 1, the fourth number is 1 + 1 = 2, the fifth number is 1 + 2 = 3, and so on.
-
-
