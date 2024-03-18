@@ -13,11 +13,11 @@
 
 // console.log(coreFunction("martynas", alertName));
 
-// const cars = ["BMW", "VW", "Audi"]
+const cars = ["BMW", "VW", "Audi"]
 
-// cars.forEach((car, i) => {
-//     console.log(i + ": " + car) 
-// })
+cars.forEach((car, i) => {
+    console.log(i + ": " + car) 
+})
 
 
 // const names = ["maRtynas", "jOnas", "stasys", "Karlas"];
