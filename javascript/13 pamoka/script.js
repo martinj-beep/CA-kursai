@@ -51,3 +51,43 @@
 const findUnique = (arr) => {
     
 }
+
+
+
+// Sukurkite funkciją findMostFrequent, kuri nustato ir grąžina dažniausiai pasitaikantį elementą masyve.
+
+//console.log(findMostFrequent([3, 7, 3, 1, 3, 7, 1, 1, 1, 1, 3])); // 1
+
+function findMostFrequent(arr) {
+    let findMostFrequentNumber;
+    let findMostFrequentAmount = 0;
+
+    arr.forEach((x) => {
+        const filtered = arr.filter((y) => y === x); // is originalaus arejaus isfiltruos tik visus tokius pacius skaicius
+        console.log(`x - ${x}, filtered: ${filtered}, length: ${filtered.length}`);
+
+        if (filtered.length > findMostFrequentAmount) {
+            findMostFrequentNumber = x;
+            findMostFrequentAmount = filtered.length // cia lygins su praejusia buvusia didziausia reiksme, kuomet lyginamas yra filtered.length (kiek kartu kartojosi skaicius)
+        }
+    })
+
+    return findMostFrequentNumber
+}
+
+console.log(findMostFrequent([3, 7, 3, 1, 3, 7, 1, 1, 1, 1, 3]));
+
+
+
+const groupedNumbers = {};
+
+arr.forEach((x) => {
+    if (groupedNumbers[x]) {
+        groupedNumbers[x].push(x);
+    } else {
+        groupedNumbers[x] = [x]
+    }
+})
+console.log(groupedNumbers);
+
+console.log(findMostFrequent([3, 7, 3, 1, 3, 7, 1, 1, 1, 1, 3]));
