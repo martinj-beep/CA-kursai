@@ -82,13 +82,47 @@
 // "Name: Jonas, Position: Engineer"
 // "Name: Petras, Position: Manager"
 
-const employee = { "Jonas": "Engineer", "Petras": "Manager" };
+// const employee = { "Jonas": "Engineer", "Petras": "Manager" };
 
-function printEmployeeInfo(obj) {
-    const entries = Object.entries(obj); // konvertuos is areju infor, kur pirmas elementas visada bus key, antras visada bus values
-    entries.forEach((e) => {
-        console.log(`Name: ${e[0]}, Position: ${e[1]}`);
-    })
-}
+// function printEmployeeInfo(obj) {
+//     const entries = Object.entries(obj); // konvertuos is areju infor, kur pirmas elementas visada bus key, antras visada bus values
+//     entries.forEach((e) => {
+//         console.log(`Name: ${e[0]}, Position: ${e[1]}`);
+//     })
+// }
 
-printEmployeeInfo(employee)
+// printEmployeeInfo(employee)
+
+
+
+
+// Parašykite funkciją createPerson, kuri sukuria objektą su savybėmis: name, lastname ir age. Funkcija turi priimti šias savybes kaip argumentus ir grąžinti sukurtą objektą.
+
+// Rezultatas:
+// onsole.log(createPerson("Jonas", "Jonaitis", 30)); // { name: "Jonas", lastname: "Jonaitis", age: 30 }
+
+// const createPerson = (name, lastName, age) => {
+//     let result = {
+//         name: name,
+//         lastName: lastName,
+//         age: age
+//     }
+//     return result
+// }
+
+// console.log(createPerson("Martynas", "Jakutis", 25));
+
+
+
+
+
+// Sukurkite funkciją printCarInfo, kuri atspausdina visą automobilio informaciją. Automobilis yra objektas su savybėmis: brand (markė), model (modelis), ir year (metai). Funkcija turi grąžinti eilutę su visomis automobilio savybėmis.
+
+// Rezultatas:
+// console.log(printCarInfo({ brand: "Toyota", model: "Corolla", year: 2020 })); // "Brand: Toyota, Model: Corolla, Year: 2020"
+
+// const car1 = { brand: "Toyota", model: "Corolla", year: 2020 }
+
+// const printCarInfo = (obj) => `Brand: ${car1.brand}, model: ${car1.model}, year: ${car1.year}`
+
+// console.log(printCarInfo(car1));
