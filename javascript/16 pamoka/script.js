@@ -138,37 +138,119 @@
 // theater.cancelBooking(2, 3);
 // console.log(theater.checkAvailability(2, 3)); // true
 
-class MovieTheater {
-    constructor(rows, seatsPerRow) {
-        this.rows = rows;
-        this.seatsPerRow = seatsPerRow;
-    }
+// class MovieTheater {
+//     constructor(rows, seatsPerRow) {
+//         this.seatsTotal = Array.from({ length: rows }, () => Array(seatsPerRow).fill(true)); // sukuriant objekta naudojantis klase, jame bus sukurtas 2D arejus, kuriame bus patalpintos true reiksmes (laisvos vietos)
+//     }
 
-    bookSeat(row, seat) {
-        if (x === true) {
-            x = false;
-            console.log("Vieta sekmingai rezervuota");
-        } else {
-            console.log("Vieta jau uzimta");
-        }
-    }
+//     bookSeat(row, seat) {
+//         if (this.seatsTotal[row][seat] === true) {
+//             console.log("Vieta sekmingai rezervuota");
+//             this.seatsTotal[row][seat] = false;
+//         } else {
+//             console.log("Vieta jau uzimta");
+//         }
+//     }
 
-    cancelBooking(row, seat) {
-        if (x === false) {
-            x = true;
-            console.log("Vietos reservacija atsaukta");
-        } else {
-            console.log("Vieta nera rezervuota");
-        }
-    }
+//     cancelBooking(row, seat) {
+//         if (this.seatsTotal[row][seat] === false) {
+//             console.log("Vietos reservacija atsaukta");
+//             this.seatsTotal[row][seat] = true;
+//         } else {
+//             console.log("Vieta nera rezervuota");
+//         }
+//     }
 
-    checkAvailability(row, seat) {
-        if (x === true) {
-            console.log("Vieta laisva");
-        } else {
-            console.log("Vieta uzimta");
-        }
+//     checkAvailability(row, seat) {
+//         if (this.seatsTotal[row][seat] === true) {
+//             console.log("Vieta laisva");
+//         } else {
+//             console.log("Vieta uzimta");
+//         }
+//     }
+// }
+
+// const vingis = new MovieTheater(4, 5);
+
+// console.log(vingis.bookSeat(3, 4));
+
+// console.log(vingis.cancelBooking(3, 4));
+
+
+// Jūs turite sukurti dvi klases: Book ir Library. 
+
+//     Book klasė atstovauja knygą ir turi savybes title (pavadinimas), author (autorius), ir year (išleidimo metai). Gali panaudoti iš pirmos užduoties. 
+
+//     Library klasė valdo knygų kolekciją ir skolinimo procesą. Ji turi šias funkcijas:
+
+//         addBook(book): Prideda naują Book objektą į bibliotekos kolekciją.
+
+//         lendBook(bookTitle, userName): Išduoda knygą vartotojui, jei ji yra prieinama. Saugo informaciją apie skolininką.
+
+//         returnBook(bookTitle): Grąžina knygą į biblioteką.
+
+//         listAvailableBooks(): Atspausdina sąrašą visų prieinamų knygų.
+
+// Inicializacijos ir naudojimo pavyzdys:
+// const library = new Library();
+// library.addBook(new Book("Book1", "Author1", "2020"));
+// library.addBook(new Book("Book2", "Author2", "2021"));
+// library.lendBook("Book1", "User1");
+// library.listAvailableBooks(); // "Book2 by Author2 published in 2021"
+// library.returnBook("Book1");
+// library.listAvailableBooks(); // "Book2 by Author2 published in 2021", "Book1 by Author1 published in 2020"
+
+class Book{
+    constructor(title, author, year) {
+    this.title = title;
+    this.author = author;
+    this.year = year;
     }
 }
 
-// susidet 2d masyva jame sutalpint laisvas vietash
+class Library{
+    constructor() {
+        this.availableBooks = [];
+        this.lentBooks = new Map();
+    }
+    
+    addBook(book) {
+        this.availableBooks.push(book.title)
+    }
+
+    lendBook(bookTitle, userName) {
+        // patikrins ar knygos pavadinimas yra books arejuje, jeigu yra, ta pavadinima isims, ides pavadinima i lentbooks ir i vartotojo pasiskolintu knygu sarasa
+        const book = this.availableBooks.find(book => book.title === bookTitle); // jeigu ras knygos pavadinima (bus value true), tuomet vykdys if
+        if (book) {
+            this.availableBooks = this.availableBooks.filter(b =>  b !== book);
+            this.lentBooks.set(book, userName);
+        }
+    }
+
+    returnBook(bookTitle) {
+        // jeigu grazintos knygos vardas yra takenbooks arejuje, ta pavadinima isims is arejaus ir pavadinima ides i books areju
+    }
+
+
+    listAvailableBooks() {
+        console.log(this.books);
+    }
+}
+
+const book1 = new Book("Book1", "Author1", "2001")
+const book2 = new Book("Book2", "Author2", "2002")
+const book3 = new Book("Book3", "Author3", "2003")
+const book4 = new Book("Book4", "Author4", "2004")
+
+const library1 = new Library;
+
+library1.addBook(book1);
+library1.addBook(book2);
+library1.addBook(book3);
+library1.addBook(book4);
+
+console.log(library1);
+
+library1.lendBook("Book1", "Martynas")
+
+console.log(library1);
